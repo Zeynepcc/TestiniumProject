@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6006" started-at="2020-06-21T03:53:52 EET" finished-at="2020-06-21T03:53:58 EET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6006" started-at="2020-06-21T03:53:52 EET" finished-at="2020-06-21T03:53:58 EET">
+      <class name="com.pro.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="OpenHomePageTest()[pri:1, instance:com.pro.qa.testcases.LoginPageTest@4b5189ac]" name="OpenHomePageTest" duration-ms="565" started-at="2020-06-21T03:53:52 EET" finished-at="2020-06-21T03:53:53 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenHomePageTest -->
+        <test-method status="FAIL" signature="LoginAccountTest()[pri:2, instance:com.pro.qa.testcases.LoginPageTest@4b5189ac]" name="LoginAccountTest" duration-ms="4715" started-at="2020-06-21T03:53:53 EET" finished-at="2020-06-21T03:53:57 EET">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="https://www.n11.com/giris-yap" class="btnSignIn" title="..." rel="nofollow">Giriş Yap</a> is not clickable at point (1091, 125). Other element would receive the click: <div id="userKvkkModal" class="lightBox guestKvkkLb" style="display: block;">...</div>
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'TURHAN', ip: '169.254.108.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir40228_42447717}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:35718}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 3099efe6bf519b36285afd0f6996814e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: element click intercepted: Element <a href="https://www.n11.com/giris-yap" class="btnSignIn" title="..." rel="nofollow">Giriş Yap</a> is not clickable at point (1091, 125). Other element would receive the click: <div id="userKvkkModal" class="lightBox guestKvkkLb" style="display: block;">...</div>
+  (Session info: chrome=78.0.3904.108)
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'TURHAN', ip: '169.254.108.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir40228_42447717}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:35718}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 3099efe6bf519b36285afd0f6996814e
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+at com.pro.qa.pages.LoginPage.LoginPageAccount(LoginPage.java:46)
+at com.pro.qa.testcases.LoginPageTest.LoginAccountTest(LoginPageTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAccountTest -->
+        <test-method status="FAIL" signature="GetAccountNameTest()[pri:3, instance:com.pro.qa.testcases.LoginPageTest@4b5189ac]" name="GetAccountNameTest" duration-ms="118" started-at="2020-06-21T03:53:57 EET" finished-at="2020-06-21T03:53:58 EET">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[invalid selector: The result of the xpath expression "//*[@id="header"]//text()" is: [object Text]. It should be an element.
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'TURHAN', ip: '169.254.108.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir40228_42447717}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:35718}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 3099efe6bf519b36285afd0f6996814e
+*** Element info: {Using=xpath, value=//*[@id="header"]//text()}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression "//*[@id="header"]//text()" is: [object Text]. It should be an element.
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'TURHAN', ip: '169.254.108.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\HP\AppData\Local\Temp\scoped_dir40228_42447717}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:35718}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 3099efe6bf519b36285afd0f6996814e
+*** Element info: {Using=xpath, value=//*[@id="header"]//text()}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy7.getText(Unknown Source)
+at com.pro.qa.pages.LoginPage.GetAccountName(LoginPage.java:56)
+at com.pro.qa.testcases.LoginPageTest.GetAccountNameTest(LoginPageTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAccountNameTest -->
+      </class> <!-- com.pro.qa.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
